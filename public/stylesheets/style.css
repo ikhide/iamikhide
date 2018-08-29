@@ -1,0 +1,211 @@
+p, h1, h2{
+    font-family: 'Signika Negative', sans-serif;
+}
+.navbar-default{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.nabar-nav{
+    font-family: arial;
+    margin-left: 35px 100px 0;
+}
+
+.navbar-default .navbar-nav li a{
+    color: #000;
+}
+
+.navbar-default .navbar-nav li a:hover {
+    color: greenyellow;
+}
+
+.logo img{
+    margin: 0 0 0 50px;
+    width:70px;
+    height:auto;
+}
+
+/*media*/
+
+@media(max-width:768px){
+    .logo img{
+        margin: 0 0 4px 0; 
+        width: 40px;
+        height: auto;
+       
+    }
+    navbar-toggle{
+        margin-top: 200%;
+    }
+    .navbar-nav{
+        background-color:  rgba(0, 0, 0, 0.4);
+    }
+    #projects{
+        text-align: center;
+    }
+    #projects h1{
+        text-align: center;
+    }
+    #projects img{
+        margin: auto;
+    }
+
+    #contact .fa-handshake-o{
+        float: right;
+    }
+
+
+    #footer{
+        text-align: center;
+      
+    }
+    #footer img{
+        margin: auto; 
+    }
+    .board{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+#slider{
+    background: url('../img/home.jpg');
+    width: 100%;
+    background-size: cover;
+}
+
+.item{
+    color: #fff;
+    padding: 300px 0;
+    padding-bottom: 100px;
+
+}
+
+.item h1{
+    font-size: 5em;
+}
+
+.btn{
+    background-color: #026d22;
+    border-color: transparent;
+}
+
+.btn:hover{
+    background-color: black;
+    border: black;
+}
+
+.btn-danger:focus, btn-danger:active:focus{
+    background-color:  yellow;
+    border-color:  transparent;
+}
+
+
+/*gallery*/
+
+#skills h2{
+    color: #f7f57d;
+    font-weight: 700;
+}
+
+#skills{
+    background-color: #faf7f7;
+    padding: 80px 0 80px 0;
+    text-align: center;
+}
+
+#skills .fa{
+    color: #ffffff;
+}
+
+#skills .fa:hover{
+    color: yellow; 
+}
+
+.board{
+    box-shadow: 0 4px 16px -6px white;
+    min-height: 300px;
+    background-color: black;
+    padding-top: 10px;
+}
+.board p{
+    font-size: 14px;
+    color: white;
+}
+
+/*our tour*/
+#projects{
+    background-color: rgb(219, 250, 160);
+    padding: 50px 0 50px 0;
+}
+
+#projects h1{
+    color: #00ff37;
+    font-size: 3em;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#projects p{
+    font-size: 2em;
+}
+
+#projects img{
+    max-width: 250px;;
+    max-height: auto;
+}
+
+/*contact*/
+#contact{
+    padding: 80px 0 80px 0;
+    /* background-image: url('../img/contact.jpg'); */
+    width: 100%;
+    background-size: cover;
+    background-color: rgb(163, 243, 88)
+}
+
+
+#contact h1{
+    color: #ffffff;
+    font-size: 4em;
+    font-weight: 700;
+    padding-top: 30px;
+} 
+
+#contact-us .input-group span, .fa-spin{
+    color: #082401;
+}
+
+/*footer*/
+
+#footer{
+    padding: 25px 0 25px;
+}
+
+#footer p, a{
+    color: black;
+    font-weight: 700;
+}
+
+#footer a:hover{
+    color: yellow;
+    text-decoration: none;
+}
+
+#footer img {
+    width: 40px;
+    height: auto;
+    float: right;
+}
+
+.social {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+

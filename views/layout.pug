@@ -1,0 +1,59 @@
+doctype html
+html 
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    title iamikhide
+    // Bootstrap
+    link(href='/stylesheets/bootstrap.min.css', rel='stylesheet')
+    link(href='/stylesheets/style.css', rel='stylesheet')
+    link(href='/font-awesome/css/font-awesome.min.css', rel='stylesheet')
+    link(href='http://fonts.googleapis.com/css?family=Signika+Negative', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='stylesheets/animate.min.css')
+  body
+    article.navbar.navbar-default.navbar-fixed-top(role='navigation')
+      article.container-fluid
+        article.navbar-header
+          // create striped button
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            | ☰
+          a.navbar-brand(href='#')
+            article.logo
+              img.img-responsive(src='img/mylogo.png')
+        article.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#') HOME
+            li
+              a(href='#skills') MY SKILLS
+            li
+              a(href='#projects') PROJECTS
+            li
+              a(href='#contact') CONTACT 
+       
+    // SLIDER
+    section#slider.text-center
+      article.container
+        article#myCarousel.carousel.slide(data-ride='carousel')
+          article.carousel-inner
+            article.item.active
+              h2 Fullstack Web Developer.
+            article.item
+              h2 Andriod and IOS
+            article.item
+              h2 Enterprise Desktop Applications Development
+    // END SLIDER
+   
+    block content
+
+    hr
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(src='javascripts/bootstrap.min.js')
+    script(src='javascripts/wow.min.js')
+    script(src='javascripts/wow.min.js')
+    script.
+      new WOW().init();
+
+
+    

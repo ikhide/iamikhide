@@ -1,0 +1,98 @@
+extends layout
+
+block content
+
+  section#skills
+    article.container
+      article.row
+        article.col-md-3.board
+          i.fa.fa-university.fa-4x.wow.fadeIn(aria-hidden='true')
+          h2 Education 
+          p Graduate of the University of Benin, Nigeria with a Bachelors degree in Computer Engineering. An avid self developer and learner. 
+        article.col-md-3.board
+          i.fa.fa-laptop.fa-4x.wow.fadeIn(data-wow-delay='0.2s', aria-hidden='true')
+          h2 What I do
+          p I create fullstack web apps with interactive UI/UX for small and enterprise use. 
+        article.col-md-3.board
+          i.fa.fa-wrench.fa-4x.wow.fadeIn(data-wow-delay='0.4s', aria-hidden='true')
+          h2 My Tools
+          p
+            | NodeJS, ExpressJS, ReactJS, MongoDB, React Native, ElectronJS, ProstgreSQL, Bootstrap 4, Tachyons, Python3, JAVASE, Heroku, etc
+        article.col-md-3.board
+          i.fa.fa-smile-o.fa-4x.wow.fadeIn(data-wow-delay='0.6s', aria-hidden='true')
+          h2 Hobbies
+          p Coding, Piano, Table tennis, Touring.
+  // end skills
+
+  // jobs
+  section#projects
+    article.container
+      h1 PROJECTS
+      article.row
+        article.col-md-6(align='center')
+          img.img-responsive.wow.bounceInUp(src='img/images.jpg')
+          img.img-responsive.wow.bounceInDown(src='img/favicon.png')
+        article.col-md-6.wow.bounceInRight
+          p Musicians hangout is a blog for musicians all over world to share ideas and skill.
+          a.btn.btn-danger(type='button', href='/music') visit 
+          br
+          br
+          br
+          p Let an AI detect your face and cover it with a smiley.
+          a.btn.btn-danger(type='button', href='/smiley') visit
+  // end projects
+
+  // CONTACT
+  section#contact
+    article.container
+      article.row
+        h1 CONTACT ME
+        article.col-md-6
+          form(method ="post" action="contact/send")
+            article.form-group
+              // name
+              article.input-group.wow.fadeInLeft
+                span.input-group-addon
+                  i.fa.fa-user.fa-fw
+                input.form-control(name="name" type='text', placeholder='Name')
+              // email
+              article.input-group.margin-bottom-sm.wow.fadeInLeft
+                span.input-group-addon
+                  i.fa.fa-envelope-o.fa-fw
+                input.form-control(name="email" type='text', placeholder='Email address')
+              // message
+              article.input-group.wow.fadeInLeft
+                span.input-group-addon
+                  i.fa.fa-key.fa-fw
+                textarea.form-control(name="message" placeholder="Enter Message: ")
+              //submit 
+            button.btn.btn-default.btn-lg.btn-danger(type='submit')
+              i.fa.fa-check.fa-2x.wow.fadeInLeft(aria-hidden='true')
+
+        article.col-md-4.col-md-offset-2
+          i.fa.fa-handshake-o.fa-5x.fa-spin.fa-fw
+          span.sr-only Loading...
+  // end contact us
+
+  // footer
+  footer#footer
+    article.container
+      article.row
+        article.col-md-4
+          p
+            a.fa.fa-facebook.social.fa-2x(href='/facebook')
+            |  
+            a.fa.fa-twitter.social.fa-2x(href='/twitter') 
+            | 
+            a.fa.fa-github.social.fa-2x(href='/github') 
+            | 
+            a.fa.fa-google.social.fa-2x(href='/google') 
+            | 
+            a.fa.fa-medium.social.fa-2x(href='/medium')
+            |  
+            a.fa.fa-stack-overflow.social.fa-2x(href='/stackoverflow')
+          small Copyright ©2018 ik-hi Global. All rights reserved
+        article.col-md-4.col-md-offset-4(align='right')
+          a(href='#')
+            img.img-responsive(src='img/mylogo.png')
+  // end footer
