@@ -169,14 +169,23 @@ p, h1, h2{
 
 /*media*/
 
-@media(max-width:768px){
+@media(max-width:660px){
+    #slider{
+        width: 100%;
+        background-size: contain;
+        background-repeat:no-repeat;
+        background-attachment: fixed;
+    }
+    #slider .item{
+        padding-top: 70px;
+    }
+    #slider h2{
+       font-size: 1em;
+    }
     .logo img{
         margin: 0 0 4px 0; 
         width: 40px;
         height: auto;
-    }
-    navbar-toggle{
-        margin-top: 200%;
     }
     .navbar-nav{
         background-color:  rgba(0, 0, 0, 0.4);
