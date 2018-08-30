@@ -15,7 +15,12 @@ router.get('/smiley', (req, res, next) => {
   res.redirect('http://smileyfacer.herokuapp.com');
 });
 
+
 //SOCIAL MEDIA
+
+router.get('/gmail', (req, res, next) => {
+  res.redirect('https://mail.google.com/mail/u/1/#inbox?compose=CllgCJZdkgzkkJhjqHNnvfwxswNmdxqBZrJWrMlSgPgQKvvzMPwdCtQdMKnZBMwqDRSRwdltFXB');
+});
 
 router.get('/facebook', (req, res, next) => {
   res.redirect('https://www.facebook.com/atakpu.ikhide');
@@ -40,5 +45,6 @@ router.get('/medium', (req, res, next) => {
 router.get('/stackoverflow', (req, res, next) => {
   res.redirect('https://stackoverflow.com/users/10202375/atakpu-ikhide');
 });
+
 module.exports = router;
 

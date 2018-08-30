@@ -9,6 +9,9 @@
 # production
 /build
 
+# Email login details
+login.js
+
 # misc
 .DS_Store
 .env.local

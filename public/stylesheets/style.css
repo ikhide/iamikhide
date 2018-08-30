@@ -25,60 +25,18 @@ p, h1, h2{
     height:auto;
 }
 
-/*media*/
-
-@media(max-width:768px){
-    .logo img{
-        margin: 0 0 4px 0; 
-        width: 40px;
-        height: auto;
-       
-    }
-    navbar-toggle{
-        margin-top: 200%;
-    }
-    .navbar-nav{
-        background-color:  rgba(0, 0, 0, 0.4);
-    }
-    #projects{
-        text-align: center;
-    }
-    #projects h1{
-        text-align: center;
-    }
-    #projects img{
-        margin: auto;
-    }
-
-    #contact .fa-handshake-o{
-        float: right;
-    }
-
-
-    #footer{
-        text-align: center;
-      
-    }
-    #footer img{
-        margin: auto; 
-    }
-    .board{
-        margin-left: 60px;
-        margin-right: 60px;
-    }
-}
-
 #slider{
     background: url('../img/home.jpg');
     width: 100%;
     background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
 }
 
 .item{
     color: #fff;
     padding: 300px 0;
     padding-bottom: 100px;
-
 }
 
 .item h1{
@@ -100,9 +58,7 @@ p, h1, h2{
     border-color:  transparent;
 }
 
-
-/*gallery*/
-
+/*skills*/
 #skills h2{
     color: #f7f57d;
     font-weight: 700;
@@ -128,6 +84,7 @@ p, h1, h2{
     background-color: black;
     padding-top: 10px;
 }
+
 .board p{
     font-size: 14px;
     color: white;
@@ -156,31 +113,41 @@ p, h1, h2{
     max-height: auto;
 }
 
-/*contact*/
-#contact{
-    padding: 80px 0 80px 0;
-    /* background-image: url('../img/contact.jpg'); */
+/*connect*/
+#connect{
+    padding: 40px 0 80px 0;
     width: 100%;
     background-size: cover;
-    background-color: rgb(163, 243, 88)
+    background-color: white;
 }
 
-
-#contact h1{
-    color: #ffffff;
+#connect h1{
+    color: #00ff37;
     font-size: 4em;
     font-weight: 700;
-    padding-top: 30px;
+    padding-top: 10px;
 } 
 
-#contact-us .input-group span, .fa-spin{
-    color: #082401;
+#connect .col-md-4{
+    text-align: center
+}
+
+#connect .gmail{
+    padding-top: 50px;
+    width: 400px;
+    height: auto;
+}
+
+#connect img{
+    max-width: 200px;
 }
 
 /*footer*/
 
 #footer{
     padding: 25px 0 25px;
+    background-color: rgb(52, 240, 52);  
+    background-size: 20px 20px;
 }
 
 #footer p, a{
@@ -194,18 +161,63 @@ p, h1, h2{
 }
 
 #footer img {
-    width: 40px;
+    width: 100px;
     height: auto;
     float: right;
 }
 
-.social {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-}
 
+/*media*/
+
+@media(max-width:768px){
+    .logo img{
+        margin: 0 0 4px 0; 
+        width: 40px;
+        height: auto;
+    }
+    navbar-toggle{
+        margin-top: 200%;
+    }
+    .navbar-nav{
+        background-color:  rgba(0, 0, 0, 0.4);
+    }
+    #projects{
+        text-align: center;
+    }
+    #projects h1{
+        text-align: center;
+    }
+    #projects img{
+        margin: auto;
+    }
+
+    #connect a img{
+        max-width: 120px;
+        max-height: auto;
+        padding-top: 5px;
+    }
+    #connect .gmail{
+        max-width: 180px;
+        max-height: auto;
+    }
+
+    #connect h1{
+        text-align: center;
+    }
+
+    #footer{
+        text-align: center; 
+    }
+
+    #footer a img {
+        width: 50px;
+        height: auto;
+        text-align: center;
+    }
+    .board{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+}
 
